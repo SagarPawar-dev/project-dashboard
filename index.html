@@ -15,54 +15,45 @@
     <div class="container">
 
         <aside class="sidebar">
+
             <div class="logo">
-                <a href="#name">
-                    <i data-lucide="layout-dashboard"></i>
-                    Sagar Pawar <br>frontend developer
-                </a>
-            </div>
-
-            <div class="dashboard">
                 <a href="#dashboard">
-                    <i data-lucide="Home" ></i>
-                    Dashboard
+                    <i data-lucide="layout-dashboard"></i>
+                    <span>
+                        Sagar Pawar
+                        <small>Frontend Developer</small>
+                    </span>
                 </a>
             </div>
 
-            <div class="projects">
-                <a href="#projects">
+            <nav class="sidebar-nav">
+               
+                <a href="#projects" class="nav-link">
                     <i data-lucide="folder-code"></i>
-                    Projects
+                    <span>Projects</span>
                 </a>
-            </div>
 
-            <div class="stack">
-                <a href="#stack">
+                <a href="#stack" class="nav-link">
                     <i data-lucide="code-2"></i>
-                    Tech Stack
+                    <span>Tech Stack</span>
                 </a>
-            </div>
 
-            <div class="about">
-                <a href="#about">
+                <a href="#about" class="nav-link">
                     <i data-lucide="user-round"></i>
-                    About Me
+                    <span>About Me</span>
                 </a>
-            </div>
 
-            <div class="education">
-                <a href="#education">
+                <a href="#education" class="nav-link">
                     <i data-lucide="graduation-cap"></i>
-                    Education
+                    <span>Education</span>
                 </a>
-            </div>
 
-            <div class="contact">
-                <a href="#contact">
+                <a href="#contact" class="nav-link">
                     <i data-lucide="mail"></i>
-                    Contact
+                    <span>Contact</span>
                 </a>
-            </div>
+            </nav>
+
         </aside>
 
         <main class="main-content">
@@ -74,7 +65,7 @@
                 </div>
                 <div class="header-right">
                     <div class="header-socials">
-                    <a href="https://github.com/SagarPawar-dev"
+                        <a href="https://github.com/SagarPawar-dev"
                         target="_blank"
                         rel="noopener noreferrer"
                         aria-label="GitHub">
@@ -109,19 +100,29 @@
                 <!-- 1. Etch A Sketch -->
                 <article class="card">
                     <div class="image">
-                        <img src="assets/projects/etch-a-sketch.png"
-                            alt="Etch A Sketch project preview">
+                        <img src="assets/projects/etch-a-sketch.png" alt="Etch A Sketch project">
                     </div>
 
                     <div class="img-info">
                         <h3>Etch A Sketch</h3>
-                        <p>Etch A Sketch An interactive browser-based drawing application built using a dynamic grid. Users can draw by hovering over cells and customize the grid to create different sketches.</p>
+                        <p>
+                            Etch A Sketch is an interactive browser-based drawing application
+                            built using a dynamic grid. Users can draw by hovering over cells
+                            and customize the grid to create different sketches.
+                        </p>
                     </div>
 
                     <div class="project-stack">
                         <span>HTML</span>
                         <span>CSS</span>
                         <span>JavaScript</span>
+                    </div>
+
+                    <div class="project-links">
+                        <a href="https://github.com/SagarPawar-dev/Etch-a-sketch"
+                        target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+                        <a href="https://sagarpawar-dev.github.io/Etch-a-sketch/"
+                        target="_blank" rel="noopener noreferrer">Live Demo ↗</a>
                     </div>
                 </article>
 
@@ -129,19 +130,29 @@
                 <!-- 2. Rock Paper Scissors -->
                 <article class="card">
                     <div class="image">
-                        <img src="assets/projects/rock-paper-scissors.png"
-                            alt="Rock Paper Scissors project preview">
+                        <img src="assets/projects/rock-paper-scissors.png" alt="Rock Paper Scissors project">
                     </div>
 
                     <div class="img-info">
                         <h3>Rock Paper Scissors</h3>
-                        <p>A classic game featuring player choices and score tracking.</p>
+                        <p>
+                            A classic Rock Paper Scissors game where users compete against
+                            the computer. Features randomized choices, score tracking and
+                            round-based gameplay.
+                        </p>
                     </div>
 
                     <div class="project-stack">
                         <span>HTML</span>
                         <span>CSS</span>
                         <span>JavaScript</span>
+                    </div>
+
+                    <div class="project-links">
+                        <a href="https://github.com/SagarPawar-dev/rock-paper-scissors"
+                        target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+                        <a href="https://sagarpawar-dev.github.io/rock-paper-scissors/"
+                        target="_blank" rel="noopener noreferrer">Live Demo ↗</a>
                     </div>
                 </article>
 
@@ -149,19 +160,29 @@
                 <!-- 3. Calculator -->
                 <article class="card">
                     <div class="image">
-                        <img src="assets/projects/calculator.png"
-                            alt="Calculator project preview">
+                        <img src="assets/projects/calculator.png" alt="Calculator project">
                     </div>
 
                     <div class="img-info">
                         <h3>Calculator</h3>
-                        <p>A simple calculator supporting basic arithmetic operations.</p>
+                        <p>
+                            A functional calculator that handles basic arithmetic operations.
+                            Built with JavaScript to manage user input, calculations and
+                            interactive button events.
+                        </p>
                     </div>
 
                     <div class="project-stack">
                         <span>HTML</span>
                         <span>CSS</span>
                         <span>JavaScript</span>
+                    </div>
+
+                    <div class="project-links">
+                        <a href="https://github.com/SagarPawar-dev/Calculator"
+                        target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+                        <a href="https://sagarpawar-dev.github.io/Calculator/"
+                        target="_blank" rel="noopener noreferrer">Live Demo ↗</a>
                     </div>
                 </article>
 
@@ -169,39 +190,59 @@
                 <!-- 4. Library -->
                 <article class="card">
                     <div class="image">
-                        <img src="assets/projects/Library.png"
-                            alt="Library project preview">
+                        <img src="assets/projects/Library.png" alt="Library project">
                     </div>
 
                     <div class="img-info">
                         <h3>Library</h3>
-                        <p>A library management project for organizing book entries.</p>
+                        <p>
+                            A digital library application that lets users add, manage and
+                            track books. Demonstrates JavaScript objects, DOM manipulation
+                            and dynamic UI updates.
+                        </p>
                     </div>
 
                     <div class="project-stack">
                         <span>HTML</span>
                         <span>CSS</span>
                         <span>JavaScript</span>
+                    </div>
+
+                    <div class="project-links">
+                        <a href="https://github.com/SagarPawar-dev/library"
+                        target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+                        <a href="https://sagarpawar-dev.github.io/library/"
+                        target="_blank" rel="noopener noreferrer">Live Demo ↗</a>
                     </div>
                 </article>
 
 
-                <!-- 5. Login Page -->
+                <!-- 5. Responsive Login Page -->
                 <article class="card">
                     <div class="image">
-                        <img src="assets/projects/Login-page.png"
-                            alt="Responsive login page preview">
+                        <img src="assets/projects/Login-page.png" alt="Responsive Login Page project">
                     </div>
 
                     <div class="img-info">
                         <h3>Responsive Login Page</h3>
-                        <p>A clean, responsive login interface with a modern layout.</p>
+                        <p>
+                            A modern responsive login interface with a clean design and
+                            structured form layout. Focuses on creating a consistent
+                            experience across different screen sizes.
+                        </p>
                     </div>
 
                     <div class="project-stack">
                         <span>HTML</span>
                         <span>CSS</span>
                         <span>JavaScript</span>
+                    </div>
+
+                    <div class="project-links">
+                        <a href="https://github.com/SagarPawar-dev/Login-page"
+                        target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+                        <a href="YOUR_LOGIN_LIVE_LINK"
+                        target="_blank" rel="noopener noreferrer">Live Demo ↗</a>
                     </div>
                 </article>
 
@@ -209,13 +250,16 @@
                 <!-- 6. College Complaint System -->
                 <article class="card">
                     <div class="image">
-                        <img src="assets/projects/college-complaint.png"
-                            alt="College Complaint Management System preview">
+                        <img src="assets/projects/college-complaint.png" alt="College Complaint System project">
                     </div>
 
                     <div class="img-info">
                         <h3>College Complaint System</h3>
-                        <p>A full-stack platform for submitting and managing college complaints.</p>
+                        <p>
+                            A full-stack complaint management platform built for college
+                            students and administrators. Includes authentication,
+                            complaint submission, status tracking and admin-side management.
+                        </p>
                     </div>
 
                     <div class="project-stack">
@@ -225,19 +269,29 @@
                         <span>Java</span>
                         <span>PostgreSQL</span>
                     </div>
+
+                    <div class="project-links">
+                        <a href="https://github.com/SagarPawar-dev/college-complaint-system"
+                        target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+                        <a href="https://college-complaint-system-fawn.vercel.app/"
+                        target="_blank" rel="noopener noreferrer">Live Demo ↗</a>
+                    </div>
                 </article>
 
 
                 <!-- 7. Myntra Clone -->
                 <article class="card">
                     <div class="image">
-                        <img src="assets/projects/myntra-clone.png"
-                            alt="Myntra Clone project preview">
+                        <img src="assets/projects/myntra-clone.png" alt="Myntra Clone project">
                     </div>
 
                     <div class="img-info">
                         <h3>Myntra Clone</h3>
-                        <p>A fashion e-commerce interface inspired by Myntra.</p>
+                        <p>
+                            A front-end recreation of the Myntra shopping experience.
+                            Focuses on product displays, page layouts, responsive design
+                            and e-commerce UI elements.
+                        </p>
                     </div>
 
                     <div class="project-stack">
@@ -245,29 +299,126 @@
                         <span>CSS</span>
                         <span>JavaScript</span>
                     </div>
+
+                    <div class="project-links">
+                        <a href="https://github.com/SagarPawar-dev/Myntra-clone"
+                        target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+                        <a href="YOUR_MYNTRA_LIVE_LINK"
+                        target="_blank" rel="noopener noreferrer">Live Demo ↗</a>
+                    </div>
                 </article>
 
 
                 <!-- 8. Weather App -->
                 <article class="card">
                     <div class="image">
-                        <img src="assets/projects/weather-app.jpeg"
-                            alt="Weather App preview">
+                        <img src="assets/projects/weather-forecast.jpg" alt="Weather App project">
                     </div>
 
                     <div class="img-info">
                         <h3>Weather App</h3>
-                        <p>Currently in development. Weather information and API integration coming soon.</p>
+                        <p>
+                            A weather application currently in development, planned to
+                            provide real-time weather information and location-based
+                            weather searches using an API.
+                        </p>
                     </div>
 
                     <div class="project-stack">
                         <span>Planned</span>
                     </div>
+
+                    <div class="project-links">
+                        <a href="YOUR_WEATHER_GITHUB_LINK"
+                        target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+                        <a href="YOUR_WEATHER_LIVE_LINK"
+                        target="_blank" rel="noopener noreferrer">Live Demo ↗</a>
+                    </div>
                 </article>
 
             </section>
-            
 
+           <section class="stack-container" id="stack">
+            <h2>My Tech Stack</h2>
+            <p class="section-description">
+                Technologies and tools I use while building projects.
+            </p>
+
+            <div class="stacks">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>React</span>
+                <span>C++</span>
+                <span>Git</span>
+                <span>Linux</span>
+            </div>
+            </section>
+
+            <section class="about-container" id="about">
+                <h2>About Me</h2>
+
+                <p>
+                    I'm Sagar Pawar, a Computer Engineering student passionate
+                    about frontend development and building interactive web
+                    experiences.
+                </p>
+
+                <p>
+                    I enjoy turning ideas into functional websites, exploring
+                    new technologies, and continuously improving my development
+                    skills through hands-on projects.
+                </p>
+            </section>
+
+            <section class="education-container" id="education">
+                <h2>Education</h2>
+
+                <div class="education-card">
+                    <h3>Lokmanya Tilak College of Engineering</h3>
+                    <p>B.Tech in Computer Engineering</p>
+                    <p>2025 – Present</p>
+
+                    <div class="education-result">
+                        <span>Current CGPA</span>
+                        <strong>8.75</strong>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="contact-container" id="contact">
+                <h2>Let's Connect</h2>
+
+                <p>
+                    Have an interesting idea or want to collaborate?
+                    Feel free to reach out!
+                </p>
+
+                <div class="contact-links">
+                    <a href="mailto:sagarpawar3546@gmail.com">
+                        <i data-lucide="mail"></i>
+                        Email Me
+                    </a>
+
+                    <a href="https://github.com/SagarPawar-dev"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="GitHub">
+                            <svg role="img" viewBox="0 0 24 24">
+                                <path fill="currentColor" d="M12 .297a12 12 0 0 0-3.79 23.39c.6.11.82-.26.82-.58v-2.23c-3.34.73-4.04-1.42-4.04-1.42-.55-1.39-1.33-1.76-1.33-1.76-1.09-.75.08-.74.08-.74 1.2.08 1.84 1.23 1.84 1.23 1.07 1.84 2.8 1.31 3.49 1 .11-.78.42-1.31.76-1.61-2.67-.3-5.47-1.34-5.47-5.95 0-1.31.47-2.38 1.23-3.22-.12-.3-.54-1.52.12-3.17 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.3-1.55 3.3-1.23 3.3-1.23.66 1.65.24 2.87.12 3.17.77.84 1.23 1.91 1.23 3.22 0 4.62-2.8 5.64-5.48 5.94.43.37.81 1.1.81 2.22v3.29c0 .32.22.69.83.57A12 12 0 0 0 12 .297Z"/>
+                            </svg>
+                    </a>
+
+                    <a href="https://linkedin.com/in/sagar-pawar-dev"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="LinkedIn">
+                            <svg role="img" viewBox="0 0 24 24">
+                                <path fill="currentColor" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.35V9h3.414v1.561h.049c.476-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286ZM5.337 7.433a2.062 2.062 0 1 1 0-4.124 2.062 2.062 0 0 1 0 4.124ZM6.814 20.452H3.861V9h2.953v11.452ZM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003Z"/>
+                            </svg>
+                    </a>
+                </div>
+            </section>
         </main>
     </div>
    

@@ -1,18 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 :root {
-  --bg-main: #0B1120;
-  --bg-sidebar: #111827;
-  --bg-card: #151F30;
-  --border: #253247;
+    --bg-main: #F8FAFC;
+    --bg-sidebar: #111827;
+    --bg-card: #FFFFFF;
+    --border: #E2E8F0;
 
-  --accent: #38BDF8;
-  --text-primary: #F1F5F9;
-  --text-secondary: #94A3B8;
+    --accent: #2563EB;
+
+    --text-primary: #1E293B;
+    --text-secondary: #64748B;
 }
 
+html{
+    scroll-behavior: smooth;
+}
 [data-lucide]{
     width: 20px;
     height: 20px;
     stroke-width: 2;
+}
+
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding: 28px 18px;
+    border-right: 1px solid var(--border);
+    background-color: var(--bg-main);
+    color: var(--text-primary);
+    gap: 40px;
+    position: sticky;
+    top: 0;
+}
+.logo a{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: var(--text-primary);
+    
+}
+.logo i{
+    color: var(--accent);
+}
+
+.logo span{
+    font-size: 1rem;
+    font-weight: 600;
+}
+.logo small{
+    display: block;
+    color: var(--text-secondary);
+    font-size: 0.75rem;
+    font-weight: 400;
+    margin-top: 4px;
+}
+
+.sidebar-nav{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+nav {
+    display: flex;
+    flex-direction: column;
+    padding: 12px 24px;
+    gap: 32px;
+    font-size: 37px;
+}
+.nav-link{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 24px;
+    color: var(--text-secondary);
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+.nav-link:hover{
+    background-color: var(--bg-card);
+    color: var(--text-primary);
+}
+
+.nav-link:active{
+    background-color: #1E3448;
+}
+.nav-link i{
+    height: 20px;
+    width: 20px;
 }
 
 .container{
@@ -23,8 +103,46 @@
 
 .project-container{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 24px;
+}
+
+.image img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+}
+.image-info{
+    padding: 18px 18px 10px;
+}
+.image-info h3{
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text-primary);
+
+}
+
+.img-info p{
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: var(--text-secondary);
+}
+
+.project-stack{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 8px 18px 14px;
+}
+
+.project-stack span{
+    font-size: 0.75rem;
+    font-weight: 500;
+    padding: 5px 10px;
+    background-color: #E2E8F0;
+    color: #334155;
 }
 
 body{
@@ -34,12 +152,15 @@ a{
     text-decoration: none;
 
 }
+
+
+
 .main-header {
-    grid-column: 1 / -1;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 30px;
+    gap: 20px;
 }
 
 .welcome-text h1 {
@@ -85,4 +206,173 @@ a{
     border-radius: 50%;
     object-fit: cover;
     border: 2px solid #38bdf8;
+}
+
+
+
+.main-content{
+    min-width: 0;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.card{
+    background-color: var(--bg-card);
+    border: 1px solid var(--border);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+.project-links{
+    display: flex;
+    gap: 16px;
+    margin-top: 16px;
+}
+
+.project-links a{
+    display: inline-flex;
+    align-items: center;
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 600;
+    gap: 5px;
+    transition: color 0.2s ease;
+}
+
+.project-links a:hover{
+    color: var(--accent);
+}
+.contact-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.contact-links a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--text-secondary);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.contact-links a:hover {
+    color: var(--accent);
+}
+
+.contact-links svg {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+}
+
+.stack-container,
+.about-container,
+.education-container,
+.contact-container {
+    padding: 28px;
+    background-color: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+}
+
+.stack-container h2,
+.about-container h2,
+.education-container h2,
+.contact-container h2 {
+    font-size: 1.35rem;
+    font-weight: 650;
+    color: var(--text-primary);
+    margin-bottom: 12px;
+}
+
+.stacks {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.stacks span {
+    padding: 9px 15px;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    background-color: var(--bg-main);
+    color: var(--text-primary);
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+.about-container p {
+    max-width: 750px;
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    line-height: 1.8;
+    margin-top: 10px;
+}
+
+.education-card {
+    margin-top: 18px;
+    padding: 18px;
+   
+    background-color: var(--bg-main);
+    border-radius: 5px;
+}
+
+.education-card h3 {
+    font-size: 1.05rem;
+    color: var(--text-primary);
+    margin-bottom: 8px;
+}
+
+.education-card p {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.education-result {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 14px;
+    font-size: 0.9rem;
+}
+
+.education-result span {
+    color: var(--text-secondary);
+}
+
+.education-result strong {
+    color: var(--text-primary);
+}
+
+.contact-container p {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.contact-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.contact-links a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.contact-links a:hover {
+    color: var(--accent);
 }
