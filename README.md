@@ -17,9 +17,9 @@ Built as part of **The Odin Project** curriculum.
 
 | Desktop View | Mobile View |
 | :---: | :---: |
-| ![Desktop Preview](assets/images/desktop-preview.png) | ![Mobile Preview](assets/images/mobile-preview.png) |
+| ![Desktop Preview](assets/images/desktop.png) | ![Mobile Preview](assets/images/mobile.jpeg) |
 
-> *(Place your screenshot files inside `assets/images/` or update the image paths above)*
+
 
 ---
 
