@@ -8,3 +8,9 @@
   --text-primary: #F1F5F9;
   --text-secondary: #94A3B8;
 }
+
+[data-lucide]{
+    width: 20px;
+    height: 20px;
+    stroke-width: 2;
+}
