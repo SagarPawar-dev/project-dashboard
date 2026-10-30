@@ -1,1 +1,1 @@
-let heading = document.querySelector("h1")
+lucide.createIcons();
